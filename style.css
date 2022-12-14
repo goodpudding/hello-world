@@ -1,0 +1,47 @@
+body {
+background-color: #a0c4ff;
+
+}
+
+header {
+    background-color: #ffadad;
+}
+h2 {
+    font-size: 100px;
+    margin: 0;
+    margin-top: -150px;
+    margin-bottom: 25px;
+}
+h4 {
+    font-size: 25px;
+}
+.photos {
+    max-height: 250px;
+    max-width: 250px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+.hero {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+
+}
+
+.section-container {
+    display: grid;
+    grid-template-areas: "detail detail detail";
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-columns: 150px;
+
+}
+
+#top {
+    background-color: #ffd6a5;
+}
