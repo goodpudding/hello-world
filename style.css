@@ -1,5 +1,6 @@
 body {
 background-color: #a0c4ff;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -16,8 +17,8 @@ h4 {
     font-size: 25px;
 }
 .photos {
-    max-height: 250px;
-    max-width: 250px;
+    max-height: 150;
+    max-width: 40%;
     float: left;
     margin-left: 50px;
     margin-bottom: 50px;
@@ -39,9 +40,27 @@ h4 {
     grid-template-areas: "detail detail detail";
     grid-template-columns: 33% 33% 33%;
     grid-auto-columns: 150px;
-
+    margin-top: 50px;
 }
 
 #top {
     background-color: #ffd6a5;
+}
+
+#dropdown {
+    text-align: center;
+    margin-top: 50px;
+}
+main {
+    text-align: center;
+}
+#callToAction {
+    color:  #9bf6ff;
+    text-shadow: 2px 4px 5px black;
+}
+#callToAction p {
+    font-size: 80px;
+}
+form {
+    font-size: 40px;
 }

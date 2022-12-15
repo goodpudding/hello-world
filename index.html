@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reasons Why To Adopt A Cat</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function Adopt(){
+            prompt("Thats exciting! What is your area code?", "Help me find a kitty!")
+        }
+        function favKitty() {  
+            var favPic = document.getElementById("favpic");  
+            document.getElementById("favourite").value = favPic.options[favPic.selectedIndex].text;  
+            }  
+
+    </script>
 </head>
 <body>
     <header>
@@ -16,16 +26,42 @@
         </ul>
     </header>
     <main>
+        <button onclick="myFunction()">Click if you like cats!</button>
+
+        <script>
+        function myFunction() {
+          alert("Me too!");
+        }
+        </script>
         <section>
             <section id="top">
                 <img class="hero" src='images/ReasonsWhyToAdoptACat.jpg'/>
             </section>
-            <section>
+            <section id="callToAction">
                 <h2>Become a Hero: Adopt a Cat</h2>
-                <p>Meow meow meow. Meow meow meow meow meow. Meow meow meow meow, meow meow meow. Meow meow. </p>
-            </section>
+                <p>Are you looking to adopt a kitty?</p>
+                <form><input type = "button" size = "40" value = "Yes, I need a kitty!" onclick = "Adopt();" />
+                </form>
+            </section>  
+        </section>
+        <section id="dropdown">
+            <form>  
+            <b> Select your favorite picture using the drop down menu: </b>  
+            <select id = "favpic" onchange = "favKitty()" >  
+            <option> ---Choose Picture--- </option>  
+            <option> CuddleBuddy </option>  
+            <option> Travel Companion </option>  
+            <option> Brush Therapy </option>  
+            <option> Treat Time </option> 
+            <option> Holiday Pal </option> 
+            <option> Make You Laugh</option>  
+            </select> 
+            <p> Your favorite picture is:   
+            <input type = "text" id = "favourite" size = "40"/> </p>  
+            </form> 
         </section>
         <section class="section-container">
+            
             <section>
                 <section><img class="photos" src='images/CatBrushing.jpg'/></section>
                 <section>
